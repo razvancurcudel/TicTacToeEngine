@@ -136,7 +136,7 @@ public class Processor {
 			bw = new BufferedWriter(new FileWriter("moves.txt"));
 			for (int i = 0; i < mMoves.size(); i++) {
 				Move move = mMoves.get(i);
-				System.err.println("    Move took " + mMoves.get(i).getThinkingTime() + " ms");
+				System.err.println("    Move " + i + " took " + mMoves.get(i).getThinkingTime() + " ms");
 				bw.write(move.getPlayer().getName() + " " + move.getX() + " " + move.getY()
 						+ " took " + move.getThinkingTime() + " ms");
 				System.err.println(move); // print board
